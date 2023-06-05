@@ -8,6 +8,10 @@ import org.apache.logging.log4j.Logger;
 import  java.util.regex.Pattern;
 import java.util.Scanner;
 
+/**
+ * Login page
+ * Contains methods to log in
+ */
 public class Login {
     private static final Logger logger = LogManager.getLogger(Login.class);
 

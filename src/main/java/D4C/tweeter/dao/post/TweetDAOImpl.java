@@ -30,6 +30,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
+/**
+ * Implementation class for Tweet Data Access Object
+ */
 public class TweetDAOImpl implements TweetDAO {
 
     private static final Logger logger = LogManager.getLogger(TweetDAOImpl.class);
