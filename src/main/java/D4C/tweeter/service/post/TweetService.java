@@ -82,15 +82,18 @@ public class TweetService {
 
         UserDTO user = UserService.getInstance().getUser(userId);
         tweetDAO.createTweet(body,user);
+        logger.info("Tweet posted successfully");
     }
 
     public void deleteTweet(Long id){
         tweetDAO.deleteTweet(id);
+        logger.info("Tweet deleted successfully");
     }
 
     public void addComment(Long tweetId,String message,Long userId){
         UserDTO user = UserService.getInstance().getUser(userId);
         tweetDAO.addComment(tweetId,message,user);
+        logger.info("Comment posted successfully");
     }
 
     public int getLikes(Long id){
